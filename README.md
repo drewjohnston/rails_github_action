@@ -7,6 +7,8 @@ Github action to deploy rails 6.1
 
 The main configuration is `.github/workflows/CI.yml`
 
+On github, create a new respository secret for RAILS_MASTER_KEY (Settings -> Secrets)
+
 So that databse.yml doesn't need to be edited, include config/CI_database.yml which is copied over the production database.yml on line 48 of the CI.yml file.
 
 Tests are run at line 55. This is set up for minitest - change this line if you use something different.
